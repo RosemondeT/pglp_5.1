@@ -3,7 +3,7 @@ package uvsq21921354;
 import java.io.Serializable;
 
 /**
- * La classe ContactsPersonnels
+ * La classe ContactsPersonnels qui implemente Serializable
  *
  */
 
