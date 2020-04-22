@@ -15,7 +15,7 @@ import uvsq21921354.AbstractDAOFactory.DAOType;
 
 /**
  * 
- * SerializableTest
+ * Classe de Teste SerializableTest
  *
  */
 
