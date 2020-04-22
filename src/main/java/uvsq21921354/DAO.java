@@ -1,7 +1,7 @@
 package uvsq21921354;
 
 /**
- * Interface CRUD
+ * Interface DAO
  *
  * @param <T>
  */
