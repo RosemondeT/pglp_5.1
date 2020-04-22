@@ -1,19 +1,14 @@
 package uvsq21921354;
 
-import java.sql.Connection;
-
 /**
- * 
- *Classe DAO dans laquelle on a définit des opérations de CRUD
+ * Interface CRUD
  *
- * @param <P>
+ * @param <T>
  */
-public abstract class DAO<P> {
-protected Connection connect ;
-	
-	public abstract P create(P obj);
-	public abstract P find(String id);
-	public abstract P update(P obj);
-	public abstract void delete(P obj);
+public interface DAO<T> {
 
+	T create(T obj);
+	T read(String id);
+	T update(T obj);
+	void delete(T obj);
 }

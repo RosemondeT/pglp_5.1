@@ -3,59 +3,44 @@ package uvsq21921354;
 import java.io.Serializable;
 
 /**
- * 
- * Classe ContactsPersonnels implementant Serializable de java
- * Cette classe permet de gérer les contacts du personnel de l'entreprise
+ * La classe ContactsPersonnels
  *
  */
 
-public class ContactsPersonnels implements Serializable{
-	private String Fonction;
-	private int Indicatif;
-	private int Numero;
+public class ContactsPersonnels implements Serializable {
 	
-	/**
-	 * Constructeur de la classe ContactsPersonnels
-	 */
-	public ContactsPersonnels(){
+	private static final long serialVersionUID = 1L;
+	
+
+	public String NumPro;
+	public String NumPort;
+	public String NumPer;
+	
+	
+	public ContactsPersonnels(String NumPro,String NumPort, String NumPer) {
+		this.NumPro=NumPro;
+		this.NumPort=NumPort;
+		this.NumPer=NumPer;
+	}
+	
+	public ContactsPersonnels() {
 		
 	}
-	
-	/**
-	 * Méthode permet de retourner le numéro d'un personnel de l'entreprise
-	 * @return
-	 */
-	public int getNumero() {
-		return Numero;}
-	
-	/**
-	 * Méthode permet de renseigner le numéro d'un personnel de l'entreprise
-	 * @param numero
-	 */
-	public void setNumero(int numero) {
-		Numero = numero;}
-	
-	/**
-	 * Méthode permet d'ajouter le contact d'un personnel de l'entreprise
-	 * @param fonction
-	 * @param indicatif
-	 * @param Num
-	 * @return
-	 */
-	public ContactsPersonnels add(String fonction, int indicatif, int Num) {
-		this.Fonction = fonction;
-		this.Indicatif = indicatif;
-		this.Numero = Num;
-		return this;
+	public String toString() {
+		return NumPro + " - " + NumPort + " - " + NumPer;
 	}
 	
-	/**
-	 * Permet de d'afficher le contact d'un personnel de l'entreprise
-	 */
-	
-	public void afficher() {
-		System.out.println("\t Fonction : " +this.Fonction);
-		System.out.println("\t\t Indicatif : +"+this.Indicatif);
-		System.out.println("\t\t Numero : "+this.Numero);
+	public void setNumeroProf(String NumPro) {
+		this.NumPro=NumPro;
 	}
+	
+	public void setNumeroPort(String NumPort) {
+		this.NumPort=NumPort;
+	}
+	
+	public void setNumeroPer(String NumPer) {
+		this.NumPer=NumPer;
+	}
+
+	
 }
