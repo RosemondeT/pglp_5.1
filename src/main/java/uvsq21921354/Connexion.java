@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 
 /**
  * 
- * Classe connexion implémentant InterfaceConnexion
+ * Classe connexion qui implémente InterfaceConnexion
  *
  */
 public class Connexion implements InterfaceConnexion {
