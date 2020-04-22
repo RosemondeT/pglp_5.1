@@ -1,6 +1,10 @@
 package uvsq21921354;
 
-
+/**
+ * 
+ * classe AbstractDAOFactory
+ *
+ */
 
 public abstract class AbstractDAOFactory {
 	public enum DAOType {JDBC, Serial};
